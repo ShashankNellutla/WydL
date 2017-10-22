@@ -1,0 +1,9 @@
+c:\users\shash\documents\visual studio 2017\Projects\YoutubeDownloader\YoutubeDownloader\obj\Debug\YoutubeDownloader.csprojResolveAssemblyReference.cache
+c:\users\shash\documents\visual studio 2017\Projects\YoutubeDownloader\YoutubeDownloader\obj\Debug\YoutubeDownloader.Form1.resources
+c:\users\shash\documents\visual studio 2017\Projects\YoutubeDownloader\YoutubeDownloader\obj\Debug\YoutubeDownloader.csproj.GenerateResource.Cache
+c:\users\shash\documents\visual studio 2017\Projects\YoutubeDownloader\YoutubeDownloader\obj\Debug\WydL.Properties.Resources.resources
+c:\users\shash\documents\visual studio 2017\Projects\YoutubeDownloader\YoutubeDownloader\bin\Debug\WydL.exe.config
+c:\users\shash\documents\visual studio 2017\Projects\YoutubeDownloader\YoutubeDownloader\bin\Debug\WydL.exe
+c:\users\shash\documents\visual studio 2017\Projects\YoutubeDownloader\YoutubeDownloader\bin\Debug\WydL.pdb
+c:\users\shash\documents\visual studio 2017\Projects\YoutubeDownloader\YoutubeDownloader\obj\Debug\WydL.exe
+c:\users\shash\documents\visual studio 2017\Projects\YoutubeDownloader\YoutubeDownloader\obj\Debug\WydL.pdb
