@@ -6,3 +6,4 @@ c:\users\shash\documents\visual studio 2017\Projects\YoutubeDownloader\YoutubeDo
 c:\users\shash\documents\visual studio 2017\Projects\YoutubeDownloader\YoutubeDownloader\obj\Release\YoutubeDownloader.csproj.GenerateResource.Cache
 c:\users\shash\documents\visual studio 2017\Projects\YoutubeDownloader\YoutubeDownloader\obj\Release\WydL.exe
 c:\users\shash\documents\visual studio 2017\Projects\YoutubeDownloader\YoutubeDownloader\obj\Release\WydL.pdb
+C:\Users\shash\documents\visual studio 2017\Projects\YoutubeDownloader\YoutubeDownloader\obj\Release\YoutubeDownloader.csprojResolveAssemblyReference.cache

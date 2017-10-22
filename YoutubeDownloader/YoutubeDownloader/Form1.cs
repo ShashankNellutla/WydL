@@ -19,10 +19,6 @@ namespace YoutubeDownloader
 
 
         }
-
-
-
-
         void Form1_DragEnter(object sender, DragEventArgs e)
         {
             if (e.Data.GetDataPresent(DataFormats.Text)) e.Effect = DragDropEffects.Copy;
@@ -40,9 +36,8 @@ namespace YoutubeDownloader
         private void dwb_Click(object sender, EventArgs e)
         {
 
-            string filename = @"D:\youtube-dl.exe";
+            string filename = @"C:\Program Files\WydL\youtube-dl.exe";
             string args = "--no-check-certificate " + tb.Text + " -o " + "\"" + textBox1.Text + @"\" + getfilename(tb.Text) + "\"";
-
             string output = null;
             var proc = new Process
             {
@@ -51,28 +46,13 @@ namespace YoutubeDownloader
                     FileName = filename,
                     Arguments = args,
                     UseShellExecute = false
-                    //RedirectStandardOutput = true,
-                  //  RedirectStandardError = true
-                   // CreateNoWindow = true
+
                 }
             };
-          //  MessageBox.Show(filename + " " + args);
-            proc.Start();
-            proc.WaitForExit();
-
-            /*
-            while (!proc.StandardOutput.EndOfStream)
-            {
-                output = proc.StandardOutput.ReadToEnd() + proc.StandardError.ReadToEnd();
-            }
-            */
-
-            MessageBox.Show("Success!", "WydL", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Process.Start(textBox1.Text);
-          //  MessageBox.Show(output);
-
-
-
+                proc.Start();
+                proc.WaitForExit();
+                MessageBox.Show("Success!", "WydL", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Process.Start(textBox1.Text);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -92,13 +72,14 @@ namespace YoutubeDownloader
 
         public string getfilename(string url)
         {
-            string filename = @"D:\youtube-dl.exe";
+            string filename = @"C:\Program Files\WydL\youtube-dl.exe";
             string args = "--no-check-certificate --get-filename " + tb.Text;
             string output = null;
             var proc = new Process
             {
                 StartInfo = new ProcessStartInfo
                 {
+
                     FileName = filename,
                     Arguments = args,
                     UseShellExecute = false,
@@ -107,28 +88,20 @@ namespace YoutubeDownloader
                 }
             };
 
-            proc.Start();
-
-
+                if(filename.Length!=0)
+                proc.Start();
             
             while (!proc.StandardOutput.EndOfStream)
             {
                 output = proc.StandardOutput.ReadToEnd();
             }
             return output.Trim();
-
-
-
         }
-
-
-
 
         private void button1_Click(object sender, EventArgs e)
         {
             folderBrowserDialog1.ShowNewFolderButton = true;
             folderBrowserDialog1.ShowDialog();
-
             textBox1.Text = folderBrowserDialog1.SelectedPath;
         }
 
@@ -155,9 +128,7 @@ namespace YoutubeDownloader
 
         private void tb_TextChanged(object sender, EventArgs e)
         {
-            if (tb.Text.Contains("youtube.com")) {
-                MessageBox.Show("now get qualities");
-            }
+            
         }
 
         private void restartWydLToolStripMenuItem_Click(object sender, EventArgs e)
